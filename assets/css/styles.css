@@ -1,0 +1,244 @@
+/** fonts **/
+
+@font-face {
+    font-family: "chronicle display";
+    src: url(../fonts/Chronicle\ Display\ Semibold.otf);
+}
+
+@font-face {
+    font-family: "gilroy extrabold";
+    src: url(../fonts/Gilroy-ExtraBold.ttf.ttf);
+}
+
+@font-face {
+    font-family: "gilroy bold";
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+/** reset **/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: "gilroy bold";
+}
+
+body{
+    background-color: #0B1D26;
+}
+
+p{
+    font-size: 18px;
+}
+
+h1, h2{
+    font-family: "chronicle display";
+}
+
+h1{
+    font-size: 5.5rem;
+    margin: 2rem 0;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #FBD784;
+    letter-spacing: 6px;
+}
+
+h4{
+    color: #FBD784;
+    font-size: 24px ;
+}
+
+.bg-img {
+    background-image: linear-gradient(180deg, 
+        #0b1d2600 50%, 
+        #0b1d264d 80%,  
+        #0b1d26 100%),
+    url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    height: 130vh; /** jai mis 130 pour avoir et le ciel visible et l'herbe en bas**/ 
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+article a{
+    color: #FBD784;
+}
+
+.line{
+    width: 72px;
+    height: 2px;
+    background-color: #FBD784;
+    margin-right: 2rem;    
+}
+
+.line, h3{
+    display: inline-block;
+    vertical-align: middle;
+}
+/** header **/
+header{
+    padding: 4rem 5rem;
+    position: relative;
+    background: transparent;
+}
+
+header .column {
+    display: inline-block;
+    vertical-align: middle; 
+}
+
+.logo {
+    text-align: left;
+    width:20%;
+}
+
+.navbar {
+    text-align: center;
+    width: 59%;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 2.3rem;
+}
+
+.account {
+    text-align: right;
+    width: 20%;
+}
+
+.account img, .account a{
+    vertical-align: middle;
+}
+
+.container{
+    margin: 2rem 0;
+}
+
+.social-media {
+    position: fixed;
+    left: 2%;
+    top: 35%;
+    transform: translateY(-50%);
+    transform: rotate(0.25turn);
+    text-align: center;
+}
+.social-media p, .social-media img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.home{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home a, .home img{
+    vertical-align: middle;
+    margin: 0 0.5rem;
+}
+
+.slider{
+    position: fixed;
+    right: 2%;
+    top: 40%;
+    transform: translateY(-50%);
+    border-right: solid 3px #0B1D26;
+    padding-right: 1rem;
+    background-color: #928e8e23;
+}
+
+.slider ul li{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+/** articles**/ 
+
+article{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 12.5rem;
+}
+
+.article .description, .article .img-container {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+}
+
+.nb-01, .nb-03 {
+    position: absolute;
+    opacity: 0.1;
+    left: 0;
+    top: 0;
+    z-index: 1; 
+}
+
+.nb-02 {
+    position: absolute;
+    opacity: 0.1;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1; 
+}
+
+.nb-01 p, .nb-02 p, .nb-03 p{
+    font-size: 15rem;
+    font-family: "gilroy bold";
+}
+
+.img-container{
+    max-width: 566px;
+
+}
+.img-container img {
+    width: 100%;
+    
+}
+
+.description p{
+    margin: 2rem 0;
+}
+
+footer{
+    width: 80%;
+    margin: auto;
+}
+
+footer .column{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-branding{
+    width: 50%;
+}
+
+.footer-nav{
+    width: 20%;
+}
+
+footer nav ul li{
+    list-style: none;
+    margin: 1rem 0;
+}
+
